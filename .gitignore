@@ -1,0 +1,12 @@
+esphome/secrets.yaml
+esphome/.esphome/
+esphome/.pioenvs/
+esphome/.piolibdeps/
+*.bin
+*.elf
+*.map
+.idea/
+.vscode/
+tmp/
+codex-backups/
+
