@@ -4,5 +4,5 @@ This repository is a public record of one working installation. It is not a cust
 
 For product compatibility, wiring, warranty, safety or installation questions, contact AlunoTec or a qualified installer. The author cannot provide direct customer support.
 
-Reproducible defects in the published code may be reported through GitHub, but responses are not guaranteed.
+The repository's issue tracker is disabled. The published material is provided as-is and the author does not undertake to answer support requests.
 
