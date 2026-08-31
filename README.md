@@ -97,7 +97,7 @@ This is an unofficial, field-tested example—not an AlunoTec product, an instal
 
 The cabinet contains mains voltage and high-current motor/light circuits. Isolate it before inspection or wiring and use a qualified electrician or competent installer. Do not alter mains wiring, protective earth, motor outputs, safety devices or the original controller based on this repository.
 
-This repository is not a customer-support channel. Installation and product-support questions should go to AlunoTec or the customer's installer. Repository issues may be used for reproducible code defects, but may not be monitored.
+This repository is not a customer-support channel and its issue tracker is disabled. Installation, compatibility and product-support questions should go to AlunoTec or the customer's installer.
 
 ## Licence
 
