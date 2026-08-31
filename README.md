@@ -52,7 +52,7 @@ The supplied configuration passed the ESPHome `2026.8.2` configuration validator
 
 ## Installation-specific channel mapping
 
-These addresses were Barry's choice and may differ on another installation:
+These addresses were chosen for the reference installation and may need to be configured differently for a specific installation:
 
 | Home Assistant entity | T600 motor address |
 |---|---:|
