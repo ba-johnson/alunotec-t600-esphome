@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">AlunoTec T600 ESPHome RS485 wiring</title>
+  <desc id="desc">The original 24 volt supply continues to power the T600 controller and also feeds a 24-to-5 volt converter. The converter powers a Waveshare ESP32-S3-Relay-1CH by USB-C. The Waveshare A-plus and B-minus terminals connect to the corresponding T600 RS485 A and B terminals. The onboard relay is unused. The original controller continues to drive all motors, lights, sensors and remotes.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f8fa}.panel{fill:#fff;stroke:#253247;stroke-width:3}.sub{fill:#edf2f7;stroke:#53657a;stroke-width:2}.title{font:700 36px Arial,sans-serif;fill:#152235}.h{font:700 25px Arial,sans-serif;fill:#152235}.t{font:20px Arial,sans-serif;fill:#253247}.small{font:17px Arial,sans-serif;fill:#53657a}.tag{font:700 18px Arial,sans-serif;fill:#152235}.wifi{fill:none;stroke:#238a57;stroke-width:7;stroke-dasharray:14 10}.powerp{fill:none;stroke:#d9382e;stroke-width:8}.powern{fill:none;stroke:#364152;stroke-width:8}.a{fill:none;stroke:#e28700;stroke-width:8}.b{fill:none;stroke:#1769aa;stroke-width:8}.bus{fill:none;stroke:#6a4bbc;stroke-width:8}.unused{fill:none;stroke:#9aa5b1;stroke-width:5;stroke-dasharray:10 10}.warn{fill:#fff4d8;stroke:#c98500;stroke-width:2}.arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 z" fill="context-stroke"/></marker>
+  </defs>
+  <rect class="bg" width="1600" height="900"/>
+  <text class="title" x="70" y="65">AlunoTec T600 + ESPHome: added low-voltage wiring</text>
+  <text class="small" x="70" y="100">Original controller retained - ESP32 sends native commands on RS485 - Waveshare relay unused</text>
+
+  <rect class="panel" x="70" y="160" rx="18" width="390" height="250"/>
+  <text class="h" x="100" y="205">Original 24 V DC supply</text>
+  <text class="t" x="100" y="242">Mean Well LRS-350-24</text>
+  <text class="small" x="100" y="278">Supplied in the T600 cabinet</text>
+  <rect class="sub" x="100" y="320" rx="9" width="120" height="54"/><text class="tag" x="132" y="354">+24 V</text>
+  <rect class="sub" x="270" y="320" rx="9" width="120" height="54"/><text class="tag" x="312" y="354">0 V</text>
+
+  <rect class="panel" x="605" y="140" rx="18" width="430" height="310"/>
+  <text class="h" x="635" y="185">Original T600 control board</text>
+  <text class="t" x="635" y="220">CQZ1001-01D-WF V2.2 (pictured)</text>
+  <rect class="sub" x="635" y="255" rx="9" width="145" height="54"/><text class="tag" x="665" y="289">24 V input</text>
+  <rect class="sub" x="635" y="340" rx="9" width="135" height="54"/><text class="tag" x="671" y="374">RS485 A</text>
+  <rect class="sub" x="820" y="340" rx="9" width="135" height="54"/><text class="tag" x="856" y="374">RS485 B</text>
+  <text class="small" x="635" y="425">Original controller retained</text>
+
+  <rect class="panel" x="1175" y="160" rx="18" width="350" height="250"/>
+  <text class="h" x="1205" y="205">Existing T600 equipment</text>
+  <text class="t" x="1205" y="248">Motors - lights</text>
+  <text class="t" x="1205" y="283">Sensors - remotes</text>
+  <text class="small" x="1205" y="335">Existing wiring unchanged</text>
+  <text class="small" x="1205" y="370">and not reproduced here</text>
+
+  <rect class="panel" x="70" y="535" rx="18" width="390" height="220"/>
+  <text class="h" x="100" y="580">12/24 V to 5 V converter</text>
+  <text class="t" x="100" y="617">JZK USB-C converter (pictured)</text>
+  <text class="small" x="100" y="660">Input: cabinet 24 V DC</text>
+  <text class="small" x="100" y="695">Output: regulated 5 V USB-C</text>
+
+  <rect class="panel" x="605" y="505" rx="18" width="430" height="280"/>
+  <text class="h" x="635" y="550">Waveshare module</text>
+  <text class="t" x="635" y="585">ESP32-S3-Relay-1CH</text>
+  <rect class="sub" x="635" y="620" rx="9" width="135" height="54"/><text class="tag" x="670" y="654">RS485 A+</text>
+  <rect class="sub" x="820" y="620" rx="9" width="135" height="54"/><text class="tag" x="857" y="654">RS485 B-</text>
+  <rect class="sub" x="635" y="700" rx="9" width="145" height="54"/><text class="tag" x="665" y="734">USB-C 5 V</text>
+  <text class="small" x="815" y="714">GPIO17 TX / GPIO18 RX</text>
+  <text class="small" x="815" y="742">RS485 auto-direction</text>
+
+  <rect class="panel" x="1175" y="535" rx="18" width="350" height="220"/>
+  <text class="h" x="1205" y="580">Home Assistant</text>
+  <text class="t" x="1205" y="620">Native ESPHome API</text>
+  <text class="small" x="1205" y="660">Local Wi-Fi control</text>
+  <text class="small" x="1205" y="695">Cover and light entities</text>
+
+  <path class="powerp arrow" d="M220 347 V305 H550 V282 H635"/>
+  <path class="powern arrow" d="M390 347 V325 H575 V300 H635"/>
+  <text class="tag" x="475" y="262">24 V DC</text>
+
+  <path class="powerp arrow" d="M160 374 V475 H130 V535"/>
+  <path class="powern arrow" d="M330 374 V475 H365 V535"/>
+  <text class="tag" x="175" y="502">24 V DC</text>
+
+  <path class="powerp arrow" d="M460 620 H525 V727 H635"/>
+  <text class="tag" x="470" y="604">5 V USB-C</text>
+
+  <path class="a" d="M702 394 V475 H565 V647 H635"/>
+  <path class="b" d="M888 394 V475 H1075 V647 H955"/>
+  <text class="tag" x="575" y="495">A to A+</text>
+  <text class="tag" x="950" y="495">B to B-</text>
+
+  <path class="bus arrow" d="M1035 285 H1175"/>
+  <text class="tag" x="1050" y="266">Original outputs</text>
+
+  <path class="wifi arrow" d="M1175 645 H1035"/>
+  <text class="tag" x="1055" y="628">Wi-Fi</text>
+
+  <rect class="warn" x="70" y="825" rx="10" width="1455" height="52"/>
+  <text class="tag" x="95" y="858">Safety: isolate mains before work. Never feed 24 V into the Waveshare 5 V input. Mains, earth and motor wiring are not shown.</text>
+</svg>
+
